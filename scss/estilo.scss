@@ -1,0 +1,56 @@
+*{  margin: 0; padding: 0;
+    box-sizing: border-box; 
+}
+$color1: #69132e;
+$color2: #921e2c;
+$color3: #c8382a;
+$color4: #fe6d26;
+$color5: #ffb31f;
+$letras: rgb(95, 20, 117);
+
+body{
+    background-color: $color1;
+    color: $letras;
+    a{
+        font-style: normal;
+        &:hover{
+            color: rgb(111, 0, 255);
+        }
+        &:active{
+            color: $color3;
+        }
+        &:after{
+            color: $color3;
+        }
+    }
+}
+.cabeza{
+    margin: 2rem 4rem;
+    background-color: rgb(247, 247, 247);
+    padding: 1rem;
+    border-radius: 10px;
+    .navegacion{
+        display: flex;
+        justify-content: space-around;
+        font-size: larger;
+        .botones_nav{
+            .lista{
+                list-style: none;
+                display: flex;
+                .lista_de_navegacion{
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+    .titulo{
+        .nombre{
+            font-size: 50px;
+            color: $color4;
+        }
+        .descripcion{
+            font-size: 27px;
+        }
+    }
+}
