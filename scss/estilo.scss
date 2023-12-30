@@ -6,33 +6,52 @@ $color2: #921e2c;
 $color3: #c8382a;
 $color4: #fe6d26;
 $color5: #ffb31f;
-$letras: rgb(95, 20, 117);
+$colorNegro: black;
+$letrascolor: rgb(95, 20, 117);
+$letraFuent1: 'DM Serif Display', serif;
+$letraFuent2: 'Rethink Sans', sans-serif; 
+
+
 
 body{
     background-color: $color1;
-    color: $letras;
+    color: $letrascolor;
+    font-family: $letraFuent2;
     a{
-        font-style: normal;
+        color: $colorNegro;
+        text-decoration: none;
         &:hover{
-            color: rgb(111, 0, 255);
+            color: $colorNegro;
         }
         &:active{
-            color: $color3;
+            color: $colorNegro;
         }
         &:after{
-            color: $color3;
+            color: $colorNegro;
         }
     }
 }
 .cabeza{
-    margin: 2rem 4rem;
+    margin: 2rem 15%;
     background-color: rgb(247, 247, 247);
     padding: 1rem;
     border-radius: 10px;
+    -webkit-box-shadow: 17px 14px 20px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 14px 20px 7px rgba(0,0,0,0.75);
+    box-shadow: 17px 14px 20px 7px rgba(0,0,0,0.75);
+
     .navegacion{
+        position: fixed;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: larger;
+        .nombre_nav{
+            display: flex;
+            flex-direction: row;
+            p{
+                margin: 10px;
+            }
+        }
         .botones_nav{
             .lista{
                 list-style: none;
@@ -45,12 +64,15 @@ body{
         }
     }
     .titulo{
+        padding: 4rem;
         .nombre{
             font-size: 50px;
             color: $color4;
+            font-family: $letraFuent1;
         }
         .descripcion{
             font-size: 27px;
+            color: $colorNegro
         }
     }
 }

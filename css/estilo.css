@@ -5,33 +5,48 @@
 
 body {
   background-color: #69132e;
-  color: #5f1475; }
+  color: #5f1475;
+  font-family: "Rethink Sans", sans-serif; }
   body a {
-    font-style: normal; }
+    color: black;
+    text-decoration: none; }
     body a:hover {
-      color: #6f00ff; }
+      color: black; }
     body a:active {
-      color: #c8382a; }
+      color: black; }
     body a:after {
-      color: #c8382a; }
+      color: black; }
 
 .cabeza {
-  margin: 2rem 4rem;
+  margin: 2rem 15%;
   background-color: #f7f7f7;
   padding: 1rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+  -webkit-box-shadow: 17px 14px 20px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 17px 14px 20px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: 17px 14px 20px 7px rgba(0, 0, 0, 0.75); }
   .cabeza .navegacion {
+    position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: larger; }
+    .cabeza .navegacion .nombre_nav {
+      display: flex;
+      flex-direction: row; }
+      .cabeza .navegacion .nombre_nav p {
+        margin: 10px; }
     .cabeza .navegacion .botones_nav .lista {
       list-style: none;
       display: flex; }
       .cabeza .navegacion .botones_nav .lista .lista_de_navegacion {
         margin-left: 2rem;
         margin-right: 2rem; }
-  .cabeza .titulo .nombre {
-    font-size: 50px;
-    color: #fe6d26; }
-  .cabeza .titulo .descripcion {
-    font-size: 27px; }
+  .cabeza .titulo {
+    padding: 4rem; }
+    .cabeza .titulo .nombre {
+      font-size: 50px;
+      color: #fe6d26;
+      font-family: "DM Serif Display", serif; }
+    .cabeza .titulo .descripcion {
+      font-size: 27px;
+      color: black; }
